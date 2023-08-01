@@ -1,4 +1,4 @@
 # Flappy-Bird-AI
+Watch NEAT AI simulate genetic evolution and create the perfect Flappy Bird! Created using P5.js library.  
 
-Flappy Bird game created using P5 library and using NEAT AI to simulate genetic evolution and create the perfect Flappy Bird!  
-[Live Demo](https://tylermommsen.github.io/Flappy-Bird-AI/)
+[Live Demo](https://tylermommsen.github.io/Flappy-Bird-AI/) 👈 
