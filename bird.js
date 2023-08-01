@@ -73,7 +73,7 @@ class Bird {
         if (closest != null) {
             let inputs = [];
             inputs[0] = this.y;
-            inputs[1] = this.y - (closest.topY + 1320); 
+            inputs[1] = this.y - (closest.topY + 980); 
             inputs[2] = (closest.bottomY) - (this.y + this.height);
             inputs[3] = closest.x - this.x;
             inputs[4] = this.vel;
@@ -87,7 +87,7 @@ class Bird {
 
     // check if hit floor or ceiling
     checkCollisions() {
-        if (this.y + this.height < 80 || this.y > 1170) {
+        if (this.y + this.height < 80 || this.y > 822) {
             return true;
         } else {
             return false;

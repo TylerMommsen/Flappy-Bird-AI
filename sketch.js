@@ -1,4 +1,4 @@
-const TOTALPOP = 100;
+const TOTALPOP = 50;
 let birds = [];
 let savedBirds = [];
 let obstacles = [];
@@ -23,7 +23,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(1000, 1320);
+    createCanvas(720, 980);
     for (let i = 0; i < TOTALPOP; i++) {
         birds[i] = new Bird();
     }
@@ -99,12 +99,12 @@ function draw() {
     ground.show(groundImg);
 
     fill(255);
-    textSize(80);
-    text(score, width/2, 160);
-    textSize(50);
-    text('Gen: '+gen, 40, 90);
-    text('Speed: '+gameSpeed +'x', 40, 150);
-    text('Alive: '+birds.length, 40, 210);
+    textSize(60);
+    text(score, width/2 - 10, 100);
+    textSize(30);
+    text('Gen: '+gen, 40, 60);
+    text('Speed: '+gameSpeed +'x', 40, 100);
+    text('Alive: '+birds.length, 40, 140);
 }
 
 function keyPressed() {

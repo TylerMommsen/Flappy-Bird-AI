@@ -3,11 +3,11 @@ class Pipes {
     constructor() {
         this.x = width;
         this.w = 140;
-        this.h = 1320;
+        this.h = 980;
         this.speed = 5;
         this.spacing = 300;
-        this.gapCenter = random(400, 920);
-        this.topY = (this.gapCenter - this.spacing/2) - 1320;
+        this.gapCenter = random(200, 780);
+        this.topY = (this.gapCenter - this.spacing/2) - 980;
         this.bottomY = this.gapCenter + this.spacing/2;
         this.passed = false;
 
@@ -29,7 +29,7 @@ class Pipes {
 
     // checks collision with pipes and birds
     collided(bird) {
-        if ((bird.y < this.topY + 1320) || (bird.y > this.bottomY - 80)) {
+        if ((bird.y < this.topY + 980) || (bird.y > this.bottomY - 80)) {
             if ((bird.x < this.x + this.w) && (bird.x + bird.width > this.x)) {
                 return true;
             }
